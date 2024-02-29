@@ -29,7 +29,7 @@ public class JobTask {
 	@Autowired
 	private Job job;
 
-	@Scheduled(fixedDelay  = DIA)
+	@Scheduled(fixedDelay  = SEGUNDO)
 	public void executeJob() throws Exception {
 		LOG.info("Inicio: " + new Date());
 		JobParameters jobParameters = new JobParametersBuilder()
