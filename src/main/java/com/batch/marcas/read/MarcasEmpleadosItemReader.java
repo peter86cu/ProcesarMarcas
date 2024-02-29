@@ -26,7 +26,7 @@ public class MarcasEmpleadosItemReader implements ItemReader<MarcasEmpleado> {
 		LocalDate fechaActual = LocalDate.now();
         int mes = fechaActual.getMonthValue()-1;
         int anio= fechaActual.getYear();
-		marcasIterator = respository.findMarcasAProcesar(7,anio,"SIN PROCESAR").iterator();
+		marcasIterator = respository.findMarcasAProcesar(2,anio,"SIN PROCESAR").iterator();
 	}
 
 	@Override
